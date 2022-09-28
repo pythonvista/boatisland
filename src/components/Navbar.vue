@@ -5,9 +5,10 @@
     <v-row>
       <!-- logo side of header -->
       <v-col cols="3" class="col-xs-6 col-sm-3 col-lg-3 d-flex align-center mr-2-xs mr-2-sm ">
-        <v-title class="d-flex align-center justify-center">
-          <h2 class="">PythonV</h2>
-        </v-title>
+        <div class="d-flex align-center justify-center logo-holder">
+          <img src="../assets/img/logo.png"  alt="">
+          <h2 class="black--text">BoatIsland</h2>
+      </div>
       </v-col>
       <!-- end of logo side of header -->
       <v-spacer class="hidden-md-and-up"></v-spacer>
@@ -25,7 +26,7 @@
       <!-- links side and route side of header -->
       <v-col cols="4" class="  justify-end align-center hidden-sm-and-down d-none d-md-flex d-lg-flex d-xl-flex  ">
         <!-- buttons for route side of header eg. contest, challenge and battle they are being looped over  -->
-        <v-btn flat small class="mr-2 transparent" v-for="link in links" :to="link.url" :key="link.title">
+        <v-btn flat small  text class="mr-2 black--text" v-for="link in links" :to="link.url" :key="link.title">
           <v-icon left>{{ link.icon }}
           </v-icon>{{ link.title }}
         </v-btn>
@@ -37,19 +38,19 @@
             <v-menu open-on-hover bottom offset-y>
               <template v-slot:activator="{ on, attrs }">
                 <!-- account icon for drop down menu -->
-                <v-btn class="pa-0 transparent" v-bind="attrs" v-on="on">
-                  <v-icon>{{ account.icon }}
+                <v-btn text class="pa-0 transparent" v-bind="attrs" v-on="on">
+                  <v-icon color="black">{{ account.icon }}
                   </v-icon>
                 </v-btn>
                 <!-- end account icon for drop down menu -->
               </template>
               <!-- dropdown wrapper for styling each list  -->
-              <div class="drop-wrap  ">
+              <div class="drop-wrap">
                 <v-list class="transparent">
                   <v-list-item class="drop-list" v-for="(item, index) in dropdown" :key="index" :to="item.url">
-                    <v-icon left color="yellow">{{ item.icon }}</v-icon>
+                    <v-icon left color="#FF7643">{{ item.icon }}</v-icon>
                     <v-list-item-title>
-                      <h4 class="white-text drop-text">{{ item.title }}</h4>
+                      <h4 class="black-text drop-text">{{ item.title }}</h4>
                     </v-list-item-title>
                   </v-list-item>
                 </v-list>
@@ -70,7 +71,7 @@
       <v-btn @click="menu"
         class="transparent mr-2 pa-0  hidden-md-and-up  d-md-none d-lg-none d-xl-none d-sm-flex" fab depressed text
         right>
-        <v-icon>menu</v-icon>
+        <v-icon color="#FF7643">mdi-menu</v-icon>
       </v-btn>
       
       <!-- <v-navigation-drawer v-model="drawer" class="z4 drawer">
@@ -117,9 +118,9 @@ export default {
 <style scoped>
 /* navbar header styles are all here  */
 .header {
-  background: transparent !important;
+  background: white !important;
   z-index: 2;
-  border: none !important;
+  border-bottom: 2px solid #FF7643 !important;
   overflow: hidden;
 }
 
@@ -145,19 +146,19 @@ export default {
 /* dropdown wraper styling is here for the wraping and hover */
 
 .drop-wrap {
-  background: #191941 !important;
+  background: white !important;
   border-radius: 5px !important;
 
 
 }
 
 .drop-list {
-  border-left: 1px solid #FFC700;
+  border-left: 1px solid #FF7643;
   margin-bottom: 1px;
 }
 
 .drop-text {
-  color: white !important;
+  color: black !important;
 }
 
 /* end of dropdown wraper styling, wraping and hover */
@@ -167,7 +168,7 @@ export default {
 /* Form search styling are all here for navbar */
 
 .search {
-  border: 1.5px solid #FFC700;
+  border: 1.5px solid #FF7643;
   padding: 0.135rem 0.5rem;
   border-radius: 1rem;
 }
@@ -175,18 +176,28 @@ export default {
 input {
   border: none;
   outline: none;
-  caret-color: #FFC700;
-  color: white;
+  caret-color: #FF7643;
+  color: black;
   padding-left: 0.4rem;
 }
 
 input::placeholder {
-  color: white;
+  color: black;
   font-size: 0.8rem;
 }
 
 .w-80 {
   width: 80%;
+
+}
+
+.logo-holder{
+  gap: 10px;
+  justify-content: flex-start !important;
+}
+
+.logo-holder img{
+  width: 10% !important;
 
 }
 
@@ -201,12 +212,21 @@ input::placeholder {
     position: absolute;
     width: 10% !important;
     height: 100% !important;
-    background-color: yellow;
+    background-color: #FF7643;
    clip-path: circle(35.6% at 100% 50%);
     right: 0 !important;
     z-index: 1;
     
     
+}
+
+@media (max-width:900px) {
+  .logo-holder img{
+  width: 28% !important;
+
+}
+
+  
 }
 </style>
 

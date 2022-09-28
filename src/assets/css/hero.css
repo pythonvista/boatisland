@@ -22,23 +22,19 @@
 
 .img-wrap {
     height: 85%;
-    background: rgba(0, 0, 0, 0.703);
+    background: url('../img/mainbg.png');
     position: relative !important;
-    border: 1px solid #FFC700;
+    border: 1px solid #FF7643;
     border-bottom-color:transparent ;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    background-size: cover;
+    background-position: center center;
     
 }
 
-.vs{
-    /* position: absolute !important;
-    top: 0; */
-    /* bottom: 0;
-    right: 0;
-    width: 100%; */
-    /* width: 100%;
-    transform: scale(1.32) translateY(-10%); */
+/* .vs{
+   
     position: absolute !important;
     width: 100%;
     bottom: -2px;
@@ -46,7 +42,7 @@
     z-index: 1 !important;
     
     
-}
+} */
 
 .img-text {
     height: 15%;
@@ -57,7 +53,7 @@
     z-index: 1000000 !important;
     position: absolute;
     width: 100%;
-    border: 1px solid #FFC700;
+    border: 1px solid #FF7643;
     border-top-color:transparent ;
     border-bottom-left-radius: 5px  ;
     border-bottom-right-radius: 5px;
@@ -68,7 +64,7 @@
 
 .maintext{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 3rem !important;
+    font-size: 2.3rem !important;
 }
 
 
@@ -91,7 +87,8 @@
 
     .maintext{
         font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 1rem !important;
+        font-size: 0.8rem !important;
+        padding: 0 0.8rem;
     }
     
 

@@ -19,8 +19,8 @@
                 </div> -->
             </div>
             <div class="navi">
-                <v-icon color="yellow" class="prev">mdi-arrow-left-bold-circle</v-icon>
-                <v-icon color="yellow" class="next">mdi-arrow-right-bold-circle</v-icon>
+                <v-icon color="#FF7643" class="prev">mdi-arrow-left-bold-circle</v-icon>
+                <v-icon color="#FF7643" class="next">mdi-arrow-right-bold-circle</v-icon>
             </div>
 
 

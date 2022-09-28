@@ -7,10 +7,10 @@
         <v-list-item-group v-model="selectedItem" color="primary">
           <v-list-item class="items" v-for="(item, i) in SideNav" :key="i">
             <v-list-item-icon>
-              <v-icon color="yellow" v-text="item.icon"></v-icon>
+              <v-icon color="#FF7643" v-text="item.icon"></v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title class="white--text " v-text="item.text"></v-list-item-title>
+              <v-list-item-title  color="#FF7643" v-text="item.text"></v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
@@ -21,18 +21,18 @@
         <!-- account sctions -->
 
         <v-list-group :value="false" class="account" dark prepend-icon="prependIcon" append-icon="appendIcon">
-          <v-icon slot="prependIcon" color="yellow">mdi-account-circle</v-icon>
-          <v-icon slot="appendIcon" color="white">mdi-chevron-down</v-icon>
+          <v-icon slot="prependIcon" color="#FF7643">mdi-account-circle</v-icon>
+          <v-icon slot="appendIcon" color="#FF7643">mdi-chevron-down</v-icon>
           <template v-slot:activator>
-            <v-list-item-title class="white--text">Account</v-list-item-title>
+            <v-list-item-title class="black--text">Account</v-list-item-title>
           </template>
           <v-list-item-group v-model="selectedItem">
             <v-list-item class="items" v-for="(item, i) in  MobAccount" :key="i">
               <v-list-item-icon>
-                <v-icon color="yellow" v-text="item.icon"></v-icon>
+                <v-icon color="#FF7643" v-text="item.icon"></v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title class="white--text " v-text="item.text"></v-list-item-title>
+                <v-list-item-title class="#FF7643--text " v-text="item.text"></v-list-item-title>
               </v-list-item-content>
             </v-list-item>
           </v-list-item-group>
@@ -41,10 +41,10 @@
 
         <!-- Discover sctions -->
         <v-list-group :value="true" class="account" dark prepend-icon="prependIcon" append-icon="appendIcon">
-          <v-icon slot="prependIcon" color="yellow">{{discover.icon}}</v-icon>
-          <v-icon slot="appendIcon" color="white">mdi-chevron-down</v-icon>
+          <v-icon slot="prependIcon" color="#FF7643">{{discover.icon}}</v-icon>
+          <v-icon slot="appendIcon" color="#FF7643">mdi-chevron-down</v-icon>
           <template v-slot:activator>
-            <v-list-item-title class="white--text">{{discover.title}}</v-list-item-title>
+            <v-list-item-title class="black--text">{{discover.title}}</v-list-item-title>
           </template>
           <div class=" discover">
             <Discover />
@@ -86,8 +86,8 @@ export default {
 /* Navigation drawer css styling */
 
 .draw-wrap{
-    color: white;
-    background-color: #0D0D31 !important;
+    color: #FF7643;
+    background-color: white !important;
     width: 80% !important;
     overflow-y: scroll !important;
     height: 100vh !important;

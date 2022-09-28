@@ -10,8 +10,8 @@ export default new Vuex.Store({
     user: false,
     activeUser: null,
     Navlinks: [
-      {title: "Challenges",  url: "/Challenges", icon:"mdi-account-supervisor-circle"},
-      {title:"Battles", url: "/battles", icon: "mdi-axe-battle"},
+      {title: "Explore",  url: "/Challenges", icon:"mdi-account-supervisor-circle"},
+      {title:"Create", url: "/battles", icon: "mdi-axe-battle"},
     
      ],
 
@@ -27,22 +27,22 @@ export default new Vuex.Store({
      discover:{title: "Discover", icon:"mdi-electron-framework"},
 
      MobAccount: [
-      { text: 'Login', url: "/login", icon:"mdi-login" },
-      { text: 'Create Account', url: "/signup", icon: 'mdi-account-plus' },
-      { text: 'Sign-out', icon: 'mdi-logout' },
+      { text: 'Profile', url: "/login", icon:"mdi-account" },
+      { text: 'Collections', url: "/signup", icon: 'mdi-account-plus' },
+      { text: 'Wallet', icon: 'mdi-wallet' },
     ],
      SideNav: [
       { text: 'Home', icon: 'home' },
-      { text: 'Challenges',  url: "/Challenges", icon:"mdi-account-supervisor-circle" },
-      { text: 'Battles', url: "/battles", icon: 'mdi-axe-battle' },
+      { text: 'Explore',  url: "/explore", icon:"mdi-account-supervisor-circle" },
+      { text: 'Create', url: "/create", icon: 'mdi-axe-battle' },
 
     ],
 
     disapi:[
-      {title:"Code Battle 2020", img:"img/images.jfif", url:""},
-      {title:"Code Combat Ai League", img:"img/code2.png", url:""},
-      {title:"Dawn of the Code War", img:"img/code3.jfif", url:""},
-      {title:"Javascript Basic Challenge", img:"img/code4.png", url:""}
+      {title:"Tchapo", img:"img/boat1.png", url:""},
+      {title:"Boat of the day", img:"img/bg.png", url:""},
+      {title:"Nfts Collectible", img:"img/boat3.png", url:""},
+      {title:"Music Collection", img:"img/boat4.png", url:""}
     ]
 
 

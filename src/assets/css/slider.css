@@ -30,7 +30,7 @@
 
 .post .text{
     height: 10%;
-    background-color:  #2A2A47;
+    background-color:  #FF7643;
     color: white;
     display: flex;
     justify-content: center;
@@ -47,7 +47,7 @@
     justify-content: center;
     gap: 30px;
    
-    border: 1px solid #FFC700;
+    border: 1px solid #FF7643;
     /* border-top-color: transparent ; */
     border-bottom-left-radius:8px ;
     border-bottom-right-radius:8px ;

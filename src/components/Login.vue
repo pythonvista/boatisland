@@ -57,8 +57,6 @@
               </div>
               <div class="d-flex justify-center align-center flex-column">
                 <v-btn class="white--yellow" @click="signup" :loading="loading">Sign Up</v-btn>
-                <v-btn class="mt-2" flat @click="studentLogin()">Kinplus Student ?</v-btn>
-
                 <div class="mt-2"><a class="black--text">Have An Account ? <span class="blue--text"
                       id="sign-in-btn">Sign
                       in</span></a></div>

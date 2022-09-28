@@ -2,11 +2,11 @@
   <div>
     <!-- beginiging of header panel containing the bg video and navbar -->
     <v-container relative fluid class="pa-0   landing">
-      <video class="bgvideo" autoplay="" playsinline="" muted="" loop="">
+      <!-- <video class="bgvideo" autoplay="" playsinline="" muted="" loop="">
         <source
           src="https://link.storjshare.io/s/jvfx5z72v42cou3p5pmxsr7lv3zq/kinplus/video/pexels-c-technical-6153734.mp4?download=1"
           type="video/mp4">
-      </video>
+      </video> -->
       <div class="blur "></div>
       <Navbar @open="open($event)" v-if="navbar" />
       <v-card class="  hero z2 h-calc d-flex justify-center align-center ">

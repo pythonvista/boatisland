@@ -1,0 +1,136 @@
+.h-100{height: 100%;} .h-90{height: 90%;} .h-80{height: 80%;}.h-60{height: 60%;}.h-50{height: 50%;}
+.h-20{height: 20%;} .h-calc{height: calc(100% - 64px);}
+.vh-100{height: 100vh;} .vh-80{height: 80vh;} .vh-50{height: 50vh;}.vh-30{height: 30vh;}.vh-20{height: 20vh;}
+.vh-15{height: 15vh;} .vh-85{height: 85vh;}
+.w-100{width: 100%;} .w-90{width: 90%;} .w-80{width: 80%;}.w-60{width: 60%;}.w-50{width: 50%;}
+.w-20{width: 2width;}
+.border{border: 2px solid red;} .wborder{border: 2px solid rgb(255, 255, 255);}
+.z1{z-index: 1;}.z2{z-index: 2;}.z3{z-index: 3;}.z4{z-index: 4 !important;}
+
+.hero_wrap {
+    width: 100%;
+}
+
+
+
+.img-card {
+    width: 60%;
+    margin: 0 auto;
+    height: 280px;
+    position: relative;
+}
+
+.img-wrap {
+    height: 85%;
+    background: rgba(0, 0, 0, 0.703);
+    position: relative !important;
+    border: 1px solid #FFC700;
+    border-bottom-color:transparent ;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+.vs{
+    /* position: absolute !important;
+    top: 0; */
+    /* bottom: 0;
+    right: 0;
+    width: 100%; */
+    /* width: 100%;
+    transform: scale(1.32) translateY(-10%); */
+    position: absolute !important;
+    width: 100%;
+    bottom: -2px;
+    left: 0;
+    z-index: 1 !important;
+    
+    
+}
+
+.img-text {
+    height: 15%;
+    background: #2A2A47;
+    display: flex !important;
+    align-items: center;
+    padding: 0 0.8rem;
+    z-index: 1000000 !important;
+    position: absolute;
+    width: 100%;
+    border: 1px solid #FFC700;
+    border-top-color:transparent ;
+    border-bottom-left-radius: 5px  ;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+
+    
+}
+
+.maintext{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem !important;
+}
+
+
+
+@media (max-width:999px) {
+    
+    .content{
+       display: flex !important;
+       justify-content: center !important;
+       align-items: center !important;
+        text-align: left !important;
+    }
+
+    .hero{
+        display: flex !important;
+        text-align: center !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+    }
+
+    .maintext{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 1rem !important;
+    }
+    
+
+    
+    .img-card{
+        width: 80% !important;
+        margin-top: 4rem !important;
+        margin: 0 auto;
+        height: 220px !important;
+    }
+    
+}
+
+
+@media (max-width:600px) {
+    .content{
+       
+        text-align: center !important;
+    }
+
+    .maintext{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 2rem !important;
+    }
+
+    .socials{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        
+    }
+    .socials .ic {
+        margin: 0 !important;
+        
+
+    }
+
+
+   
+    
+}

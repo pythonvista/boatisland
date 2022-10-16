@@ -16,9 +16,12 @@
     <!-- end of header panel containing the bg video and navbar -->
 
     <!-- the battle slide section of the landing page -->
-    <v-container fluid class="wborder z2">
-      <Battle />
-    </v-container>
+
+    <div >
+      <dashboard />
+    </div>
+   
+    
     <!-- end of  the battle slide section of the landing page -->
 
     <SideNav/>
@@ -32,7 +35,8 @@
 
 import Navbar from "../components/Navbar.vue";
 import Hero from "../components/home/hero.vue";
-import Battle from "../components/home/battle.vue";
+import dashboard from "../components/home/dashboard.vue";
+
 import SideNav from "../components/SideNav.vue";
 
 export default {
@@ -50,7 +54,7 @@ export default {
   components: {
     Navbar,
     Hero,
-    Battle,
+    dashboard,
     SideNav
   },
   methods: {

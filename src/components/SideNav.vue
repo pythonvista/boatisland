@@ -27,7 +27,7 @@
             <v-list-item-title class="black--text">Account</v-list-item-title>
           </template>
           <v-list-item-group v-model="selectedItem">
-            <v-list-item class="items" v-for="(item, i) in  MobAccount" :key="i">
+            <v-list-item class="items" v-for="(item, i) in  MobAccount" :key="i" link :to="{path: item.url}">
               <v-list-item-icon>
                 <v-icon color="#FF7643" v-text="item.icon"></v-icon>
               </v-list-item-icon>

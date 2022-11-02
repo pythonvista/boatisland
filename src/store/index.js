@@ -16,7 +16,7 @@ export default new Vuex.Store({
      ],
 
      dropdown:[
-      {title: "Home", icon:"home", url:"/"},
+      {title: "Home", icon:"home", url:"/home"},
       {title: "Dashboard", url: "/dashboard", icon:"mdi-view-dashboard"},
       {title: "Login", url: "/login", icon:"mdi-login"},
       {title: "Create an account", url: "/register", icon: "mdi-account-plus"},
@@ -30,9 +30,10 @@ export default new Vuex.Store({
       { text: 'Profile', url: "/login", icon:"mdi-account" },
       { text: 'Collections', url: "/signup", icon: 'mdi-account-plus' },
       { text: 'Wallet', icon: 'mdi-wallet' },
+      { text: 'Libary', icon: 'mdi-play-box-multiple-outline', url:'/libary' },
     ],
      SideNav: [
-      { text: 'Home', icon: 'home' },
+      { text: 'Home', icon: 'home', url: '/' },
       { text: 'Explore',  url: "/explore", icon:"mdi-magnify" },
       { text: 'Create', url: "/create", icon: 'mdi-axe-battle' },
 

@@ -31,6 +31,15 @@ const routes = [
           /* webpackChunkName: "profile" */ '@/components/home/explore.vue'
         ),
     },
+    {
+      path: '/libary',  // default view
+      name: 'libary',
+      // meta: { requiresAuth: true },
+      component: () =>
+        import(
+          /* webpackChunkName: "profile" */ '@/components/home/libary.vue'
+        ),
+    },
   ]
   },
   {

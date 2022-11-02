@@ -3,7 +3,7 @@
         <p class="ma-0 pa-0 font-bold text-xl">Your Libary</p>
         <div class="flex flex-col gap-4 justify-start items-start">
 
-            <div class="flex flex-row items-center w-full justify-between">
+            <div class="flex flex-row hover:shodow items-center w-full justify-between">
                 <div class="flex flex-row items-center justify-start gap-2">
                     <v-btn depressed  class="py-5 shadow" color="white">
                         <v-icon class="">mdi-music</v-icon>
@@ -52,7 +52,7 @@
             <div class="flex flex-row items-center w-full justify-between">
                 <div class="flex flex-row items-center justify-start gap-2">
                     <v-btn depressed class="py-5 shadow"  color="white">
-                        <v-icon class="">mdi-document</v-icon>
+                        <v-icon class="">mdi-file-document</v-icon>
                     </v-btn>
                     <p class="ma-0 pa-0 text-lg font-light">Writings Newsletter</p>
                 </div>
@@ -62,15 +62,27 @@
             </div>
             <div class="flex flex-row items-center w-full justify-between">
                 <div class="flex flex-row items-center justify-start gap-2">
-                    <v-btn depressed class="py-5 shadow"  color="white">
-                        <v-icon class="">mdi-document</v-icon>
+                    <v-btn depressed class="py-5 shadow"  color="white" cla>
+                        <v-icon>mdi-microphone</v-icon>
                     </v-btn>
-                    <p class="ma-0 pa-0 text-lg font-light">Writings Newsletter</p>
+                    <p class="ma-0 pa-0 text-lg font-light">Poadcast & Audio</p>
                 </div>
 
                 <v-icon>mdi-chevron-right</v-icon>
 
             </div>
+            <div class="flex flex-row items-center w-full justify-between">
+                <div class="flex flex-row items-center justify-start gap-2">
+                    <v-btn depressed class="py-5 shadow"  color="white">
+                        GIF
+                    </v-btn>
+                    <p class="ma-0 pa-0 text-l font-light">GIF <br> <span class="text-sm">91</span></p>
+                </div>
+
+                <v-icon>mdi-chevron-right</v-icon>
+
+            </div>
+
         </div>
 
     </div>

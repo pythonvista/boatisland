@@ -10,7 +10,7 @@ export default new Vuex.Store({
     user: false,
     activeUser: null,
     Navlinks: [
-      {title: "Explore",  url: "/Challenges", icon:"mdi-account-supervisor-circle"},
+      {title: "Explore",  url: "/explore", icon:"mdi-account-supervisor-circle"},
       {title:"Create", url: "/battles", icon: "mdi-axe-battle"},
     
      ],
@@ -33,7 +33,7 @@ export default new Vuex.Store({
     ],
      SideNav: [
       { text: 'Home', icon: 'home' },
-      { text: 'Explore',  url: "/explore", icon:"mdi-account-supervisor-circle" },
+      { text: 'Explore',  url: "/explore", icon:"mdi-magnify" },
       { text: 'Create', url: "/create", icon: 'mdi-axe-battle' },
 
     ],

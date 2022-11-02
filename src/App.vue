@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import { bus } from "@/main.js"; // 
+import { bus, mob_nav } from "@/main.js"; // 
 export default {
   name: "App",
 
@@ -32,6 +32,10 @@ export default {
       this.snackcolor = event.color
       this.snackbar = true;
       this.snackmsg = event.msg
+    });
+
+    mob_nav.$on("mob-nav", () => {
+      this.sheet = true
     });
   }
 };

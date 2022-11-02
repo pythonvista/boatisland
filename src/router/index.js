@@ -12,6 +12,26 @@ const routes = [
     path: '/',
     name: 'home',
     component: Home,
+    children: [
+       {
+      path: '',  // default view
+      name: 'index',
+      // meta: { requiresAuth: true },
+      component: () =>
+        import(
+          /* webpackChunkName: "profile" */ '@/components/home/index.vue'
+        ),
+    },
+    {
+      path: '/explore',  // default view
+      name: 'explore',
+      // meta: { requiresAuth: true },
+      component: () =>
+        import(
+          /* webpackChunkName: "profile" */ '@/components/home/explore.vue'
+        ),
+    },
+  ]
   },
   {
     path: '/admin',

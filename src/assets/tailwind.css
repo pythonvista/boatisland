@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.border-bottoms{
+    border-bottom: 1.5px solid #60109E  !important;
+    
+}
+
+.btn_hover{
+    color: white !important;
+}
+.btn_hover:hover{
+    background: white !important;
+    color: #60109E !important;
+    border: 1px solid #60109E !important;
+    transition: 0.2s;
+}
+

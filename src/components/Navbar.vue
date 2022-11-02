@@ -1,7 +1,6 @@
 <template>
   <!-- header app bar -->
-  <v-app-bar outlined colored-border flat dark class="header  ">
-
+  <v-app-bar outlined colored-border flat dark class="headerz ">
     <v-row>
       <!-- logo side of header -->
       <v-col cols="3" class="col-xs-6 col-sm-3 col-lg-3 d-flex align-center mr-2-xs mr-2-sm ">
@@ -117,7 +116,7 @@ export default {
 
 <style scoped>
 /* navbar header styles are all here  */
-.header {
+.headerz{
   background: white !important;
   z-index: 2;
   border-bottom: 2px solid #FF7643 !important;

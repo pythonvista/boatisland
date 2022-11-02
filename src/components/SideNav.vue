@@ -5,7 +5,7 @@
         <!-- nav bar menu on mobile without dropdowns -->
 
         <v-list-item-group v-model="selectedItem" color="primary">
-          <v-list-item class="items" v-for="(item, i) in SideNav" :key="i">
+          <v-list-item class="items" v-for="(item, i) in SideNav" link :to="{path: item.url}" :key="i">
             <v-list-item-icon>
               <v-icon color="#FF7643" v-text="item.icon"></v-icon>
             </v-list-item-icon>

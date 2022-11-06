@@ -48,6 +48,7 @@ Vue.config.productionTip = false;
 
 export const bus = new Vue();
 export const mob_nav = new Vue();
+export const bnav = new Vue();
 
 new Vue({
   router,

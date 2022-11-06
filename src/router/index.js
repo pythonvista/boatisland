@@ -2,20 +2,24 @@ import Vue from 'vue';
 
 import VueRouter from 'vue-router';
 
-import Admin from '../views/Admin.vue';
 import Home from '../views/Home.vue';
+import Onboarding from '../views/onboarding.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'onboarding',
+    component: Onboarding
+  },
+  {
+    path: '/home',
     component: Home,
     children: [
        {
       path: '',  // default view
-      name: 'index',
+      name: 'home',
       // meta: { requiresAuth: true },
       component: () =>
         import(
@@ -40,31 +44,24 @@ const routes = [
           /* webpackChunkName: "profile" */ '@/components/home/libary.vue'
         ),
     },
-  ]
-  },
-  {
-    path: '/admin',
-    name: 'Admin',
-    component: Admin,
-    meta: { requiresAdminAuth: true },
-    children: [ {
-      path: '',  // default view
-      name: 'dashboard',
+    {
+      path: '/profile',  // default view
+      name: 'profile',
       // meta: { requiresAuth: true },
       component: () =>
         import(
-          /* webpackChunkName: "profile" */ '@/components/admin/dashboard.vue'
+          /* webpackChunkName: "profile" */ '@/components/home/profile.vue'
         ),
-    },]
+    },
+  ]
   },
-
   {
     path: '/login',
     name: 'Login',
     meta: { requiresGuest: true },
     component: () =>
       import(
-        /* webpackChunkName: "profile" */ '@/components/Login.vue'
+        /* webpackChunkName: "profile" */ '@/components/home/Login.vue'
       ),
   },
  

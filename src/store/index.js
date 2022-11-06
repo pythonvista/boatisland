@@ -27,7 +27,7 @@ export default new Vuex.Store({
      discover:{title: "Discover", icon:"mdi-electron-framework"},
 
      MobAccount: [
-      { text: 'Profile', url: "/login", icon:"mdi-account" },
+      { text: 'Profile', url: "/profile", icon:"mdi-account", },
       { text: 'Collections', url: "/signup", icon: 'mdi-account-plus' },
       { text: 'Wallet', icon: 'mdi-wallet' },
       { text: 'Libary', icon: 'mdi-play-box-multiple-outline', url:'/libary' },

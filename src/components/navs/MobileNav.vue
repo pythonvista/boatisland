@@ -29,6 +29,12 @@ export default {
 
 .mobile_nav{
     border-bottom: 1px solid #FF7643;
+    position: sticky;
+    background: white;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .logo img{

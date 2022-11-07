@@ -33,13 +33,18 @@
     <p class="ma-0 pa-0 font-light text-center my-1 ">By clicking sign up, you agree to our <span class="primarys">Terms
         of Use</span> & Privacy Policy.</p>
     <v-divider class="w-full my-2"></v-divider>
-    <v-btn exact :to="{ name: 'Login' }" text class="font-light">Already have an account? <span class="primarys"> Sign
+    <v-btn small exact :to="{ name: 'Login' }" text class="font-light">Already have an account? <span class="primarys"> Sign
         in</span></v-btn>
   </div>
 </template>
 
 <script>
+import { bnav } from "@/main.js"; // 
 export default {
+  created() {
+        bnav.$emit("switch", (false))
+
+    },
 
 }
 </script>

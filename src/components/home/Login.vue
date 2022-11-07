@@ -13,11 +13,11 @@
         <v-text-field color="#FF7643"   outlined height="10" dense clearable></v-text-field>
       </div>
       <p color="#FF7643" class="ma-0 pa-0 font-thin">Forgot Password?</p>
-      <v-btn class="mt-2 white--text" color="#FF7643" large>Sign In</v-btn>
+      <v-btn exact  :to="{path: 'home'}" class="mt-2 white--text" color="#FF7643" large>Sign In</v-btn>
     </v-form>
     <p class="ma-0 pa-0 font-light text-center my-1 ">By clicking sign in, you agree to our <span class="primarys">Terms of Use</span>  & Privacy Policy.</p>
     <v-divider class="w-full my-2"></v-divider>
-    <v-btn exact :to="{name: 'Register'}" text class="font-light">Dont have an account? <span class="primarys"> Sign up</span></v-btn>
+    <v-btn exact small  :to="{name: 'Register'}" text class="font-light">Dont have an account? <span class="primarys"> Sign up</span></v-btn>
   </div>
 </template>
 

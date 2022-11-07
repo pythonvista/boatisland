@@ -5,6 +5,8 @@ module.exports = defineConfig({
     name: "BoatIsland",
     themeColor: "#00DC48",
     msTileColor: "#000000",
+    start_url: "",
+    display: "standalone",
     iconPaths: {
       faviconSVG: "./assets/img/logo.png",
       favicon32: "./assets/img/logo.png",

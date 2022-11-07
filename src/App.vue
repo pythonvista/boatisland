@@ -14,7 +14,7 @@
     </v-snackbar>
     <v-bottom-navigation v-if="buttonnav" class="bottom">
       <div class="flex py-3 flex-row items-center justify-evenly w-full">
-        <v-btn :to="{ name: 'home' }" color="transparent" exact large>
+        <v-btn :to="{ path: '/home' }" color="transparent" exact large>
           <v-icon color="black">mdi-home</v-icon>
         </v-btn>
         <v-btn :to="{ name: 'explore' }" color="transparent" large>

@@ -2,8 +2,8 @@
     <div class="wrap flex flex-col justify-end items-start px-4 py-10">
         <div class="content w-full gap-3 justify-center items-center flex flex-col">
             <img  src="@/assets/img/mlogo.png" alt="">
-            <v-btn large class="w-full">Login</v-btn>
-            <v-btn large class="w-full">Get started</v-btn>
+            <v-btn :to="{name: 'Login'}" large class="w-full">Login</v-btn>
+            <v-btn color="#FF7643" large class="w-full white--text">Get started</v-btn>
         </div>
     </div>
 </template>

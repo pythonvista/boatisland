@@ -3,7 +3,7 @@ module.exports = defineConfig({
   transpileDependencies: ["vuetify"],
   pwa: {
     name: "BoatIsland",
-    themeColor: "#00DC48",
+    themeColor: "#FF7643",
     msTileColor: "#000000",
     start_url: "",
     display: "standalone",

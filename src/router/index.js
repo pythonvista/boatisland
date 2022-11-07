@@ -64,6 +64,15 @@ const routes = [
         /* webpackChunkName: "profile" */ '@/components/home/Login.vue'
       ),
   },
+  {
+    path: '/register',
+    name: 'Register',
+    meta: { requiresGuest: true },
+    component: () =>
+      import(
+        /* webpackChunkName: "profile" */ '@/components/home/Register.vue'
+      ),
+  },
  
 ];
 

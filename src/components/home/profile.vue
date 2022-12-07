@@ -50,10 +50,21 @@
                         </div>
                     </div>
                 </v-tab-item>
-                <v-tab-item>
-                    <v-card color="basil" flat>
-                        <v-card-text>{{ text }}</v-card-text>
-                    </v-card>
+                <v-tab-item class="wishlist t-scrool px-2 py-6 border-2 border-solid">
+                    <div v-for="(i, index) in 18" :key="index"
+                        class="mb-3 w-full pa-3 flex flex-row items-center gap-3 hover:bg-slate-200 hover:shadow ">
+                        <v-img max-width="50" class="rounded-full" src="@/assets/img/wishbg.png"></v-img>
+                        <div class="flex flex-col justify-center items-start gap-1">
+                            <p class="ma-0 pa-0 text-sm font-normal">@okiki sent you</p>
+                            <p class="ma-0 pa-0 text-xs font-light">Okiki Olanlesi</p>
+                        </div>
+                        <v-spacer></v-spacer>
+                        <div class="flex-row flex justify-center items-center gap-1">
+                            
+                            <p class="ma-0 pa-0 font-medium text-black">+2783</p>
+
+                        </div>
+                    </div>
                 </v-tab-item>
             </v-tabs-items>
         </div>

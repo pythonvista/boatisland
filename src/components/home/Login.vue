@@ -22,7 +22,12 @@
 </template>
 
 <script>
+import { bnav } from "@/main.js"; // 
 export default {
+  created() {
+        bnav.$emit("switch", (false))
+
+    },
 
 }
 </script>
